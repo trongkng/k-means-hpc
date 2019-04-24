@@ -35,7 +35,7 @@ function getRandomColor() {
     return color;
 }
 function drawData() {
-		d3.json("enhancedKMeans.txt").then( function(jsonParsed) {
+		d3.json("enhancedKMeansSerial.txt").then( function(jsonParsed) {
 		var semiColonParser = d3.dsvFormat(";");
 		jsonParsed.forEach( function(jsonData) {
 		semiColonOutput = semiColonParser.parse(jsonData)
